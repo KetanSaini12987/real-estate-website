@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy Properties - DreamHomes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f6f8fb;
+      color: #333;
+    }
+    header {
+      background: #1f4f8b;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      background: #13345f;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    .buy-container {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+    .buy-container h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 25px;
+    }
+    .property-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease-in-out;
+    }
+    .property-card:hover {
+      transform: translateY(-5px);
+    }
+    .property-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .property-info {
+      padding: 15px;
+    }
+    .property-info h3 {
+      margin: 0;
+      color: #1f4f8b;
+    }
+    .property-info p {
+      font-size: 14px;
+      margin: 8px 0;
+      color: #555;
+    }
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #19a974;
+    }
+
+    /* Inquiry Form */
+    .inquiry-form {
+      background: white;
+      margin-top: 50px;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    .inquiry-form h2 {
+      text-align: center;
+      color: #1f4f8b;
+      margin-bottom: 20px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .form-group input, .form-group textarea, .form-group select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    .form-group textarea {
+      resize: none;
+    }
+    .submit-btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background: #1f4f8b;
+      border: none;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .submit-btn:hover {
+      background: #13345f;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      padding: 15px;
+      background: #13345f;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🏠 DreamHomes</h1>
+    <p>Your Gateway to the Perfect Home</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="agents.html">Agents</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="buy-container">
+    <h2>Homes for Sale</h2>
+    <div class="grid">
+      <!-- Property Cards -->
+      <div class="property-card">
+        <img src="buy_image1.jpg" alt="Luxury Villa">
+        <div class="property-info">
+          <h3>Luxury Villa</h3>
+          <p>4 BHK modern villa with a private pool and garden.</p>
+          <p class="price">₹ 2.5 Cr</p>
+        </div>
+      </div>
+      <div class="property-card">
+        <img src="buy_image2.jpg" alt="City Apartment">
+        <div class="property-info">
+          <h3>City Apartment</h3>
+          <p>3 BHK premium apartment in central location.</p>
+          <p class="price">₹ 1.2 Cr</p>
+        </div>
+      </div>
+      <div class="property-card">
+        <img src="buy_image3.jpg" alt="Cozy House">
+        <div class="property-info">
+          <h3>Cozy Family House</h3>
+          <p>2 BHK house with spacious backyard.</p>
+          <p class="price">₹ 85 Lakh</p>
+        </div>
+      </div>
+      <div class="property-card">
+        <img src="buy_image4.jpg" alt="Garden Villa">
+        <div class="property-info">
+          <h3>Garden Villa</h3>
+          <p>4 BHK villa with lush green surroundings.</p>
+          <p class="price">₹ 3.1 Cr</p>
+        </div>
+      </div>
+      <div class="property-card">
+        <img src="buy_image5.jpg" alt="Modern Home">
+        <div class="property-info">
+          <h3>Modern Home</h3>
+          <p>3 BHK stylish home with smart features.</p>
+          <p class="price">₹ 1.8 Cr</p>
+        </div>
+      </div>
+      <div class="property-card">
+        <img src="buy_image6.jpg" alt="Bungalow">
+        <div class="property-info">
+          <h3>Elegant Bungalow</h3>
+          <p>5 BHK spacious bungalow with parking space.</p>
+          <p class="price">₹ 4.5 Cr</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Inquiry Form -->
+    <div class="inquiry-form">
+      <h2>Interested in Buying?</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Enter your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="Enter your phone number" required>
+        </div>
+        <div class="form-group">
+          <label for="property">Select Property</label>
+          <select id="property" required>
+            <option value="">--Choose a Property--</option>
+            <option>Luxury Villa - ₹ 2.5 Cr</option>
+            <option>City Apartment - ₹ 1.2 Cr</option>
+            <option>Cozy Family House - ₹ 85 Lakh</option>
+            <option>Garden Villa - ₹ 3.1 Cr</option>
+            <option>Modern Home - ₹ 1.8 Cr</option>
+            <option>Elegant Bungalow - ₹ 4.5 Cr</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Additional Message</label>
+          <textarea id="message" rows="4" placeholder="Write your query..."></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Submit Inquiry</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 DreamHomes Real Estate. All rights reserved.
+  </footer>
+</body>
+</html>
+

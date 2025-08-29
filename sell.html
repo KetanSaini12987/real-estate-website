@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sell Property - DreamHomes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f6f8fb;
+      color: #333;
+    }
+    header {
+      background: #1f4f8b;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      background: #13345f;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    .sell-container {
+      max-width: 700px;
+      margin: 50px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+    .sell-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #1f4f8b;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    input, textarea, select {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    textarea {
+      resize: vertical;
+    }
+    button {
+      background: #19a974;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    button:hover {
+      background: #148f62;
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      padding: 15px;
+      background: #13345f;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🏠 DreamHomes</h1>
+    <p>Sell Your Property with Ease</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="buy.html">Buy</a>
+    <a href="agents.html">Agents</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="sell-container">
+    <h2>Sell Your Property</h2>
+    <form action="#" method="POST">
+      <!-- Seller Details -->
+      <h3>Personal Details</h3>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <!-- Property Details -->
+      <h3>Property Details</h3>
+      <label for="property-type">Property Type</label>
+      <select id="property-type" name="property-type" required>
+        <option value="">--Select--</option>
+        <option value="apartment">Apartment</option>
+        <option value="villa">Villa</option>
+        <option value="house">House</option>
+        <option value="bungalow">Bungalow</option>
+        <option value="plot">Plot</option>
+      </select>
+
+      <label for="location">Location</label>
+      <input type="text" id="location" name="location" placeholder="Enter property location" required>
+
+      <label for="bedrooms">Number of Bedrooms</label>
+      <input type="number" id="bedrooms" name="bedrooms" placeholder="e.g. 3" min="1" required>
+
+      <label for="price">Expected Price (₹)</label>
+      <input type="number" id="price" name="price" placeholder="Enter expected price" required>
+
+      <label for="description">Property Description</label>
+      <textarea id="description" name="description" rows="4" placeholder="Write about your property..." required></textarea>
+
+      <button type="submit">Submit Property</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 DreamHomes Real Estate. All rights reserved.
+  </footer>
+</body>
+</html>
